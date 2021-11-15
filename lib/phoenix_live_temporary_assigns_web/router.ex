@@ -17,7 +17,8 @@ defmodule PhoenixLiveTemporaryAssignsWeb.Router do
   scope "/", PhoenixLiveTemporaryAssignsWeb do
     pipe_through :browser
 
-    get "/", PageController, :index
+    # get "/", PageController, :index
+    live "/", PageLive
   end
 
   # Other scopes may use custom stacks.

@@ -1,0 +1,26 @@
+.item-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.item {
+  align-items: center;
+  border-top: 0.1rem solid #f4f5f6;
+  display: flex;
+  font-weight: bold;
+  margin: 0;
+  padding: 0.5em;
+  transition: background 0.5s;
+}
+
+.item.highlight {
+  background: lime;
+}
+
+.item button {
+  margin-bottom: 0;
+  margin-left: auto;
+  padding-left: 1em;
+  padding-right: 1em;
+}
