@@ -34,6 +34,19 @@ defmodule PhoenixLiveTemporaryAssignsWeb.PageLive do
 
   def render(assigns) do
     ~L"""
+    <p>
+      This demonstrates an issue where CSS transitions do not work properly with LiveView when using <code>temporary_assigns</code>. There are 5 items rendered in the list below, where the item’s toggle button highlights the item by toggling a class with a CSS transition.
+    </p>
+    <p>
+      <ul>
+        <li>When I toggle the first 2 items the transition is working properly (animates the background). While the element is selected in the inspector, it updates the class on the selected element like expected.</li>
+        <li>When I toggle all other (3) items the transition is not working (instantly changes background without animation). While the element is selected in the inspector, it seems to replace the whole element instead of updating it.</li>
+      </ul>
+    </p>
+    <p>
+      <a href="https://elixirforum.com/t/css-transitions-with-liveview-and-phx-update-prepend/33461/3" target="_blank">Original issue</a>
+    </p>
+
     <ul phx-update="append" id="items" class="item-list">
       <%= for item <- @items do %>
         <li id="item-<%= item.id %>"
