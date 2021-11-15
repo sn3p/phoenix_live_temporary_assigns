@@ -23,7 +23,7 @@ defmodule PhoenixLiveTemporaryAssignsWeb.PageLive do
     %Item{
       id: UUID.generate(),
       title: "Item 4",
-      highlight: true
+      highlight: false
     },
     %Item{
       id: UUID.generate(),
