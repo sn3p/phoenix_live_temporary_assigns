@@ -1,10 +1,10 @@
 This demonstrates an issue where CSS transitions do not work properly with LiveView when using `temporary_assigns`.
-There are 5 items rendered in the list below, where the item’s toggle button highlights the item by toggling a class with a CSS transition.
+When rendering 5 items in a list, where the item’s toggle button highlights the item by toggling a class with a CSS transition.
 
 - When I toggle the first 2 items the transition is working properly (animates the background). While the element is selected in the inspector, it updates the class on the selected element like expected.
 - When I toggle all other (3) items the transition is not working (instantly changes background without animation). While the element is selected in the inspector, it seems to replace the whole element instead of updating it.
 
-[Original issue](https://elixirforum.com/t/css-transitions-with-liveview-and-phx-update-prepend/33461/3)
+Issue: https://github.com/phoenixframework/phoenix_live_view/issues/1757
 
 ## Getting started
 

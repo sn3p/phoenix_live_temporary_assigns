@@ -44,7 +44,7 @@ defmodule PhoenixLiveTemporaryAssignsWeb.PageLive do
       </ul>
     </p>
     <p>
-      <a href="https://elixirforum.com/t/css-transitions-with-liveview-and-phx-update-prepend/33461/3" target="_blank">Original issue</a>
+      <a href="https://github.com/phoenixframework/phoenix_live_view/issues/1757" target="_blank">Original issue</a>
     </p>
 
     <ul phx-update="append" id="items" class="item-list">
