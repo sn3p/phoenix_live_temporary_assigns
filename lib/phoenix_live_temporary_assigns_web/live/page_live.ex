@@ -7,27 +7,27 @@ defmodule PhoenixLiveTemporaryAssignsWeb.PageLive do
   @items [
     %Item{
       id: UUID.generate(),
-      title: "Item 1",
+      title: "Item 1 (CSS transition works)",
       highlight: false
     },
     %Item{
       id: UUID.generate(),
-      title: "Item 2",
+      title: "Item 2 (CSS transition works)",
       highlight: false
     },
     %Item{
       id: UUID.generate(),
-      title: "Item 3",
+      title: "Item 3 (CSS transition does not work)",
       highlight: false
     },
     %Item{
       id: UUID.generate(),
-      title: "Item 4",
+      title: "Item 4 (CSS transition does not work)",
       highlight: false
     },
     %Item{
       id: UUID.generate(),
-      title: "Item 5",
+      title: "Item 5 (CSS transition does not work)",
       highlight: false
     }
   ]
